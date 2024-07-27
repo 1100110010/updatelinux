@@ -11,7 +11,7 @@ brave = 0
 firefox = 0
 tuxedo = 0
 sleep(1)
-#11-52. satırlar ile klavye animasyonu süsü verilmiş bildirgemizi ekrana yazdırıyoruz. 
+#15-55. satırlar ile klavye animasyonu süsü verilmiş bildirgemizi ekrana yazdırıyoruz. 
 line_1 = """Merhabalar.""" + "\n"
 for x in line_1:
     print(x, end='')
@@ -56,7 +56,7 @@ sleep(2)
 #Kullanıcının bildirgeyi sınırlama olmaksızın okuması için istediği zaman geçmesine olanak tanıyoruz.
 input("Devam etmek için 'enter' tuşuna basınız: ")
 system("clear")
-#56-100. satırlar arasında kullanıcının istekleri babındaki girdileri alıyoruz.
+#60-104. satırlar arasında kullanıcının istekleri babındaki girdileri alıyoruz.
 soru = input("Sistemi güncellemek ister misiniz? (E/H): ")
 if soru == "e":
     sistem = 1
