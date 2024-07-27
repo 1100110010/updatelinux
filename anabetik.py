@@ -1,10 +1,17 @@
+#Gerekli kütüphanelerimizi ekliyoruz.
 from os import system
 from time import sleep
 import sys
 
 sleep(1)
+#Uçbirim ekranını temizleyip program içerisinde kullanacağımız değerlere varsayılan olarak '0' değerini atıyoruz.
 system("clear")
+sistem = 0
+brave = 0
+firefox = 0
+tuxedo = 0
 sleep(1)
+#11-52. satırlar ile klavye animasyonu süsü verilmiş bildirgemizi ekrana yazdırıyoruz. 
 line_1 = """Merhabalar.""" + "\n"
 for x in line_1:
     print(x, end='')
@@ -46,8 +53,10 @@ for x in line_4:
     sys.stdout.flush()
     sleep(0.02)
 sleep(2)
+#Kullanıcının bildirgeyi sınırlama olmaksızın okuması için istediği zaman geçmesine olanak tanıyoruz.
 input("Devam etmek için 'enter' tuşuna basınız: ")
 system("clear")
+#56-100. satırlar arasında kullanıcının istekleri babındaki girdileri alıyoruz.
 soru = input("Sistemi güncellemek ister misiniz? (E/H): ")
 if soru == "e":
     sistem = 1
@@ -94,6 +103,7 @@ elif soru == "y":
 elif soru == "Y":
     tuxedo = 1
 system("clear")
+#Kullanıcının seçimleri doğrultusunda gerekli betikleri çalıştırıyoruz.
 if sistem == 1:
     system("cd betikler && bash sistem.sh")
 if brave == 1:
